@@ -15,11 +15,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         TextView textView = findViewById(R.id.tv_hello);
-        Button btnHello=findViewById(R.id.btn_hello);
+        findViewById(R.id.btn_hello)
         btnHello.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
+
                 textView.setText("Hello 南信大");
             }
         });
